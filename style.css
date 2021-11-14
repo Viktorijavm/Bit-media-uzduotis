@@ -3,78 +3,70 @@ html,body {
     margin: 0;
     padding: 0;
 }
-
+@media (max-width: 425px){
 body {
     font-family: Arial, Helvetica, sans-serif;    
     background-image: url("pirma.png");
-    background-repeat: no-repeat;
-    background-size: 62% 100%;
-    /* background-position: right;  */
-}
-.textContainer {
-    width: 60%;
-    padding-left: 6%;
+    background-repeat: no-repeat; 
+}  
 }
 .container {
     display: flex;
     flex-wrap: wrap;
-    height: 100%;
+    height: 100vh;
 }
-.logo {
-    width: 26vw;
+.container2 {
+    padding-left: 15%;
+    margin-top: -3em;
+   right: 0;
+    
 }
+
 .logoImg {
     width: 100%;
     align-self: center;
-    padding-left: 6%;
+    padding-left: 12%;
+    margin-top: -3em;
 }
 .name {
-    width: 47%;
+    width: 100%;
     margin-right: 2%;
 }
 .email{
-    width: 96.8%;
+    width: 100%;
     display: block;
     margin: 2% 0;
 }
 form {
     flex-wrap: wrap;
     display: flex;
-    width: 75%;
 }
 h1 {
     text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 3vw;
-    margin-bottom: 0;
-    opacity: 0.8;
+    text-align: center;
+    letter-spacing: 6px;
+    font-size: 2rem;  
 }
 p {
     font-weight: bold;
-    font-size: 1.3vw;
-    opacity: 0.8;
-    margin: 20px 0;
+    padding: 1em 2em;
+    text-align: left;  
 }
 ::placeholder {
     color: black;
     text-transform: uppercase;
     font-weight: bold;
-    font-size: 0.8vw;
-    opacity: 1; 
+    font-size: 2rem;
+  
   }
-  input:focus{
-    outline: none;
-    font-weight: 600;
-}
+  
 input[type=submit] {
-    border: 1px solid rgb(54, 54, 54);
-    padding: 3% 17%;
-    height: auto;
-    display: block;
+    border: 2px solid rgb(54, 54, 54);
     text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    margin-top: 3%;
+    font-weight: bolder;
+    background: none;
+    padding: 1em;
+    
 }
   input {
       background:transparent;
@@ -85,3 +77,69 @@ input[type=submit] {
       border-bottom: 1px solid rgb(54, 54, 54);
   }
   
+
+  @media (max-width: 1025px) { 
+    body {
+      background-size: 100% 100%;
+      background-image: url("trecia.png");
+    }
+    .textContainer {
+        width: 85%;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 17px;
+    }
+    form {
+        width: 500px;
+    }
+    .logo {
+      width: 300px;
+    }
+    input {
+        font-size: 12px;
+        height: 45px;
+    }
+    ::placeholder {
+        font-size: 12px;
+    }
+    input[type=submit]{
+      padding: 12px 50px;
+    }
+}
+      @media (max-width: 767px) { 
+        body {
+            background-image: url("antra.png");
+          }
+        }
+          .textContainer {
+              width: 70%;
+          }
+         
+          h1 {
+              font-size: 20px;
+          }
+          p {
+              font-size: 15px;
+          }
+          form {
+              width: 250px;
+          }
+          .logo {
+            width: 250px;
+            margin-left: 20px;
+          }
+          input {
+              font-size: 12px;
+              height: 35px;
+          }
+          ::placeholder {
+              font-size: 10px;
+          }
+          input[type=submit]{
+            padding: 10px 15px;
+            
+        }
+          
